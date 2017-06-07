@@ -1,0 +1,12 @@
+{
+  "name": "mana",
+  "version": "0.0.1",
+  "description": "AngularJS NodeJS HTTP_SERVER",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  },
+  "scripts": {
+    "start": "http-server ./app -a localhost -p 8080 -c-1"
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="loginApp">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="login/login.module.js"></script>
+</head>
+<body>
+        <div class="pane panel-primary">
+                <div class="panel-heading">
+                    <div class="panel-title">LOGIN</div>
+                </div>
+
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form  class="form-horizontal" role="form" ng-controller="loginController" >
+
+                                <div class="from-group">
+
+                                    <label class="col-md-2 control-label">
+                                         用户名：
+                                    </label>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" ng-model="userInfo.userName" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label  class="col-md-2 control-label">
+                                        密码：
+                                    </label>
+                                    <div class="col-md-4">
+                                        <input type="password" class="form-control" ng-model="userInfo.password"/>
+                                    </div>
+                                </div>
+                                <div class="from-group">
+                                    <div class="col-md-offset-2 col-md-4">
+
+                                        <button type="submit" class="btn btn-default" ng-click="login()" >Submit</button>
+                                    </div>
+
+                                </div>
+                                <div class="from-group">
+                                    <div class="col-md-offset-2 col-md-3">
+
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Check me out
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</body>
+</html>
